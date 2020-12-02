@@ -109,8 +109,8 @@ cno.Options = MQC.MQCNO_NONE; // use MQCNO_CLIENT_BINDING to connect as client
 // To add authentication, enable this block
 if (false) {
   var csp = new mq.MQCSP();
-  csp.UserId = "metaylor";
-  csp.Password = "passw0rd";
+  csp.UserId = "AshokSingh";
+  csp.Password = "mquser12345678";
   cno.SecurityParms = csp;
 }
 

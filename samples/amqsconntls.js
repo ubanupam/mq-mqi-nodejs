@@ -82,8 +82,8 @@ var sco = new mq.MQSCO();
 
 // Add authentication via the MQCSP structure
 var csp = new mq.MQCSP();
-csp.UserId = "mqguest";
-csp.Password = "passw0rd";
+csp.UserId = "AshokSingh";
+csp.Password = "mquser12345678";
 // Make the MQCNO refer to the MQCSP so it knows to use the structure
 cno.SecurityParms = csp;
 
