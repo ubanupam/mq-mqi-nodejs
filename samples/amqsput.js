@@ -38,7 +38,7 @@ var MQC = mq.MQC; // Want to refer to this export directly for simplicity
 
 // The queue manager and queue to be used. These can be overridden on command line.
 var qMgr = "QM1";
-var qName = "DEV.QUEUE.1";
+var qName = "DEV.QUEUE.2";
 
 function formatErr(err) {
   return  "MQ call failed in " + err.message;
@@ -112,8 +112,8 @@ cno.Options = MQC.MQCNO_NONE; // use MQCNO_CLIENT_BINDING to connect as client
 // To add authentication, enable this block
 if (false) {
   var csp = new mq.MQCSP();
-  csp.UserId = "AshokSingh";
-  csp.Password = "mquser12345678";
+  csp.UserId = "mqapp";
+  csp.Password = "ashok123456789";
   cno.SecurityParms = csp;
 }
 

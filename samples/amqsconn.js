@@ -61,8 +61,8 @@ var cno = new mq.MQCNO();
 
 // Add authentication via the MQCSP structure
 var csp = new mq.MQCSP();
-csp.UserId = "AshokSingh";
-csp.Password = "mquser12345678";
+csp.UserId = "mqapp";
+csp.Password = "ashok123456789";
 // Make the MQCNO refer to the MQCSP
 // This line allows use of the userid/password
 cno.SecurityParms = csp;
@@ -73,7 +73,7 @@ cno.Options |= MQC.MQCNO_CLIENT_BINDING;
 // And then fill in relevant fields for the MQCD
 var cd = new mq.MQCD();
 cd.ConnectionName = "localhost(1414)";
-cd.ChannelName = "SYSTEM.DEF.SVRCONN";
+cd.ChannelName = "DEV.APP.SVRCONN";
 // Make the MQCNO refer to the MQCD
 cno.ClientConn = cd;
 
